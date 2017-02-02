@@ -36,10 +36,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9la-2C-XQq">
                                 <rect key="frame" x="141" y="330" width="93" height="30"/>
                                 <state key="normal" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r5j-3A-asV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puT-0N-t5A">
                                 <rect key="frame" x="138" y="168" width="98" height="30"/>
                                 <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IPH-Tm-5eF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,6 +60,10 @@
                             <constraint firstItem="puT-0N-t5A" firstAttribute="top" secondItem="wmJ-Ld-IaG" secondAttribute="bottom" constant="8" id="y7u-jU-Tgb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="aKS-9n-s40" id="cpz-kc-z1J"/>
+                        <outlet property="questionLabel" destination="wmJ-Ld-IaG" id="saG-06-qYn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
